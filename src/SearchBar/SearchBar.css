@@ -1,3 +1,8 @@
+.SearchBar {
+    display: flex;
+    justify-content: space-around;
+}
+
 .Searchbar__heading, .Searchbar__controls {
     display: inline-block;
 }
