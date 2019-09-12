@@ -15,8 +15,13 @@ export default class App extends Component {
   render() {
     return (
       <main className='App'>
-        <SearchBar />
-        <FilterableList files={this.props.files} />
+        <SearchBar 
+          searchTerm={this.state.searchTerm}
+          filterOption={this.state.filterOption}/>
+        <FilterableList 
+          files={this.props.files} 
+          searchTerm={this.state.searchTerm}
+          filterOption={this.state.filterOption}/>
       </main>
     );
   }
